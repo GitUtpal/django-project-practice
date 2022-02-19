@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Student Information's</title>
+  </head>
+  <body>
+    <h1>Students :</h1>
+  <table border="2">
+      <thead>
+      <th>Student id </th>
+      <th>First Name </th>
+      <th>Last Name </th>
+      <th>Test Score </th>
+      </thead>
+      {% for student in student %}
+      <tr>
+      <td>{{ student.id}}</td>
+      <td>{{ student.firstName}}</td>
+      <td>{{ student.lastName}}</td>
+      <td>{{ student.testScore}}</td>
+      </tr>
+      {% endfor %}
+
+  </table>
+  <br/>
+  <a href="/create">Add Student</a>
+  </body>
+</html>
